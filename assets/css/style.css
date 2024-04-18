@@ -20,13 +20,27 @@ body {
 body::before {
   content: "";
   position: absolute;
-  background: #040404 url("../img/capa.png") top right no-repeat;
-  background-size: 100% 100%;
   left: 0;
   right: 0;
   top: 0;
   height: 100%;
   z-index: -1;
+}
+
+/* Para desktops */
+@media only screen and (min-width: 768px) {
+  body::before {
+    background: #040404 url("../img/capa.png") top right no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+/* Para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+  body::before {
+    background: #040404 url("../img/capam.png") top right no-repeat;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -105,8 +119,9 @@ h6 {
 }
 
 #header .social-links {
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
+  align-items: flex-start;
 }
 
 #header .social-links a {
@@ -114,8 +129,9 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.4);
+  color: black;
+  top: 20%;
   line-height: 1;
   margin-right: 8px;
   border-radius: 50%;
@@ -124,7 +140,7 @@ h6 {
 }
 
 #header .social-links a:hover {
-  background: #f5b326f1;
+  background: #f59b26f1;
 }
 
 @media (max-width: 992px) {
@@ -138,7 +154,7 @@ h6 {
   }
 
   #header .social-links {
-    margin-top: 15px;
+    margin-top: -105px;
   }
 
   #header .container {

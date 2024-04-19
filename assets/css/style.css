@@ -832,6 +832,12 @@ section .container {
   overflow-y: auto;
 }
 
+.portfolio-info {
+  padding-top: 40px;
+  color: white;
+  overflow-y: auto;
+}
+
 .details-img {
   height: 80%;
 }

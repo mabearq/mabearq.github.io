@@ -39,7 +39,7 @@ body::before {
 @media only screen and (max-width: 767px) {
   body::before {
     background: #040404 url("../img/capam.png") top right no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
   }
 }
 
@@ -823,6 +823,7 @@ section .container {
 .portfolio-details {
   padding-top: 40px;
   background: rgba(0, 0, 0, 0.8);
+  color: white;
   position: fixed;
   left: 0;
   right: 0;
@@ -830,11 +831,14 @@ section .container {
   bottom: 0;
   overflow-y: auto;
 }
-/* 
+
 .details-img {
-  object-fit: cover;
-  height: 500px;
-} */
+  height: 80%;
+}
+
+.img-swiper {
+  width: 600px;
+}
 
 
 .portfolio-details .container {
@@ -850,6 +854,7 @@ section .container {
 
 .portfolio-details .portfolio-info {
   padding-top: 45px;
+  margin-left: 40px;
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -873,7 +878,7 @@ section .container {
   padding: 15px 0 0 0;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 292px) {
   .portfolio-details .portfolio-info {
     padding-top: 20px;
   }
@@ -882,8 +887,8 @@ section .container {
 .portfolio-details .swiper-pagination {
   margin-top: 20px;
   object-fit: cover;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   position: relative;
 }
 
